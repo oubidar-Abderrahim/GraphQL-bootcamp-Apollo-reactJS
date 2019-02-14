@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { PostsList } from "./components";
+import { PostsList, AddPost } from "./components";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import "./styles.css";
@@ -28,6 +28,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
+        <AddPost />
         <PostsList />
       </div>
     </ApolloProvider>
